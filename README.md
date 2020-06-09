@@ -2,7 +2,7 @@
 Prerender content from Strapi with Angular Universal, using Apollo / GraphQL
 
 ## Strapi setup
-In `backend` run strapi with `yarn strap dev`
+In `backend` run strapi with `yarn strapi dev`
 
 On http://localhost:1337/ log in with
 - User: admin
@@ -11,6 +11,22 @@ On http://localhost:1337/ log in with
 ## Angular setup
 In `frontend` prerender the app with `npm run prerender` and serve the static files via `npx http-server dist/frontend/browser` to http://127.0.0.1:8080/
 
+## All commands
+You need two terminals:
+
+**Backend:**
+```
+cd backend
+npm i
+yarn strapi dev
+```
+**Frontend:**
+```
+cd frontend
+npm i
+npm run prerender
+npx http-server dist/frontend/browser
+```
 
 ## More info:
 - Strapi + Angular + Apollo tutorial: https://strapi.io/blog/build-a-blog-with-angular-js-strapi-and-apollo
